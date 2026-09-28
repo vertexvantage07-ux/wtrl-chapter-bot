@@ -1,0 +1,10 @@
+# WTR-Lab chapter bot dependencies.
+# Pinned to major versions so a release cannot silently change behaviour.
+
+aiogram>=3.7,<4
+aiohttp>=3.9,<4
+beautifulsoup4>=4.12,<5
+lxml>=5.0,<6
+
+# Test only. Not needed to run the bot.
+pytest>=8.0,<10

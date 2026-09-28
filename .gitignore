@@ -5,5 +5,10 @@ __pycache__/
 .pytest_cache/
 .env
 deliveries/
-*.txt
-!README.md
+
+# The bot writes fetched chapters as .txt, so those are build output.
+# Deliberately narrow: a blanket *.txt would also swallow requirements.txt,
+# which is the one file a buyer needs in order to install anything.
+/deliveries/*.txt
+chapter*.txt
+
